@@ -10,9 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    .lab-note strong { color: #bd4f37; }
-    .collapse-first { margin-bottom: 28px; }
-    .collapse-second { margin-top: 18px; }
+    .contact-copy .eyebrow { border-bottom: 1px solid #d3e577; padding-bottom: 5px; }
   </style>
 </head>
 <body>
@@ -72,25 +70,19 @@
     </section>
 
     <section class="contact-section section-wrap" id="contact">
-      <div class="contact-copy"><p class="eyebrow">LET'S MAKE YOU SOMETHING</p><h2>What are you<br><span>craving?</span></h2><p>Send us a note and we'll be in touch about your order.</p><p class="contact-detail">Wah Cantt, Pakistan<br><a href="mailto:hello@foodcorner.example">hello@foodcorner.example</a></p></div>
-      <form class="contact-form" action="#contact" method="get">
+      <div class="contact-copy"><p class="eyebrow">LET'S MAKE YOU SOMETHING</p><h2>What are you<br><span>craving?</span></h2><p>Send an order request and we’ll email you to confirm it.</p><p class="contact-detail">Wah Cantt, Pakistan<br><a href="mailto:jawadabdullah525@gmail.com">jawadabdullah525@gmail.com</a></p></div>
+      <form class="contact-form" action="https://formsubmit.co/jawadabdullah525@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Food Corner order request">
+        <input type="hidden" name="_template" value="table">
         <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="e.g. Ayesha Khan" required>
         <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
-        <label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Tell us what sounds good..." required></textarea>
-        <button class="button button-dark submit-button" type="submit">Send your note <span aria-hidden="true">↗</span></button>
+        <label for="item">Choose your order</label><select id="item" name="item" required><option value="" disabled selected>Select a menu item</option><option>Garden Pizza</option><option>Corner Burger</option><option>Market Sandwich</option><option>Sunday Pasta</option></select>
+        <label for="quantity">Quantity</label><input id="quantity" name="quantity" type="number" min="1" max="20" value="1" required>
+        <label for="message">Order details</label><textarea id="message" name="message" rows="4" placeholder="Add delivery details or a note..." required></textarea>
+        <button class="button button-dark submit-button" type="submit">Send order request <span aria-hidden="true">↗</span></button>
       </form>
     </section>
 
-    <section class="css-lab section-wrap" aria-labelledby="lab-heading">
-      <div class="section-heading lab-heading"><div><p class="eyebrow">THE CSS WORKSHOP</p><h2 id="lab-heading">A little style <span>study.</span></h2></div><p>Small, visible examples of the CSS concepts used in this lab.</p></div>
-      <div class="lab-grid">
-        <article class="lab-panel"><h3>Margin collapsing</h3><p class="lab-note">These two blocks have adjoining vertical margins. <strong>The gap is 28px, not 46px.</strong></p><div class="collapse-first">First block · margin-bottom: 28px</div><div class="collapse-second">Second block · margin-top: 18px</div><p class="lab-caption">Adjacent vertical margins between normal block elements collapse to the larger margin. Here, 28px wins over 18px.</p></article>
-        <article class="lab-panel"><h3>Overflow behavior</h3><p class="lab-note">Each fixed-height box contains more text than fits.</p><div class="overflow-examples"><div class="overflow-box overflow-visible"><b>visible</b> Extra text stays visible beyond this 56px box. The content is not clipped.</div><div class="overflow-box overflow-hidden"><b>hidden</b> Extra text is clipped at the edge of this 56px box.</div><div class="overflow-box overflow-scroll"><b>scroll</b> Extra text can be reached by scrolling inside this 56px box.</div></div></article>
-        <article class="lab-panel constraints-panel"><h3>Size constraints</h3><p class="lab-note">Resize the window: this box has width, height and min/max limits.</p><div class="constraint-box">A responsive content box, capped at 420px wide and 180px tall, with minimum dimensions to keep its content readable.</div><p class="lab-caption">Try a narrow browser window. The box width is 100% until its max-width applies.</p></article>
-        <article class="lab-panel display-panel"><h3>Display &amp; selectors</h3><p class="lab-note">Block, inline, inline-block and none examples:</p><div class="display-samples"><span class="sample-block">display: block</span><span class="sample-inline">inline one</span> <span class="sample-inline">inline two</span><span class="sample-inline-block">inline-block</span><span class="sample-hidden">hidden with display: none</span></div><p class="lab-caption">Navigation uses inline-block. The hidden sample still exists in the HTML, but display:none removes it from layout.</p></article>
-        <article class="lab-panel"><h3>Cascade, specificity &amp; inheritance</h3><p class="lab-note">This paragraph inherits its base text color from the body. A more specific external selector overrides that inherited color.</p><p class="cascade-note">The final color wins: two equal-specificity .cascade-note rules appear in source order, so the later rule is applied. The more specific .css-lab .cascade-note rule then takes precedence.</p></article>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">F</span><span>food<span class="brand-light">corner</span></span></a><p>Good food, good mood. Made fresh in Wah Cantt.</p><p>© 2026 Food Corner</p></footer>
