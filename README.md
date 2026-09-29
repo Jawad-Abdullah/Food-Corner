@@ -2,6 +2,8 @@
 
 **Good food. Good mood.**
 
+🌐 **Live website:** [https://jawad-abdullah.github.io/Food-Corner/](https://jawad-abdullah.github.io/Food-Corner/)
+
 Food Corner is a single-page restaurant website for a neighborhood food spot in Wah Cantt, Pakistan. It is built with plain HTML and CSS, with no frameworks or build tools, and showcases a menu, an about section, and an order request form.
 
 ## Features
@@ -30,9 +32,13 @@ Food-Corner/
 └── FoodCorner-Lab3-Report.pdf   # Lab 3 report (PDF version)
 ```
 
+## Live Demo
+
+This website is live and hosted on GitHub Pages: [https://jawad-abdullah.github.io/Food-Corner/](https://jawad-abdullah.github.io/Food-Corner/)
+
 ## Getting Started
 
-No installation or build step is needed.
+No installation or build step is needed to run it locally.
 
 1. Clone the repository:
    ```bash
