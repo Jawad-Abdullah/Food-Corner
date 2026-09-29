@@ -1,0 +1,1 @@
+The food photographs are loaded from Unsplash through CSS background-image URLs in ../style.css. Keep this directory for local image assets if you replace the remote images before submission.
